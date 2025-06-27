@@ -38,7 +38,7 @@ def retrieve(query, index, df, top_k=None):
 ## LLM - Generate Answer
 def generate_answer(query, context, api_key):
     openai.api_key = api_key
-    system_message = "KEnsure your answer is relevant to the provided context."
+    system_message = "Ensure your answer is relevant to the provided context."
     user_message = f"""
     Answer this question: {query}
 
